@@ -11,6 +11,7 @@ senhavaria=6
 letracerta=0
 digitocerto=0
 tentativasmax=20
+tentativas=0
 
 def criasenha(digitlen,digitvar):
 	senha=""
@@ -27,7 +28,7 @@ def testasenha(senha,tenta):
 	
 	for i1 in range(len(tenta)):
 		for i2 in range(len(senha)):
-			if tenta[l1] == l2:
+			if tenta[l1] == senh[l2]:
 				if l1==l1:
 					digitocerto+=1
 				else:
@@ -37,7 +38,9 @@ def testasenha(senha,tenta):
 
 while True:
 	senha=criasenha(senhalen,digitovaria)
-	while digitocerto != senhalen:
+	while tentativas < tentativasmax:
+
+		
 		
 	
 
